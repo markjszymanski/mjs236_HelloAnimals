@@ -1,0 +1,19 @@
+package edu.pitt.helloanimals;
+
+public class Animal {
+	
+	public static void main(String[] args) {
+		
+		String age;
+		String color;
+		String type;
+		int weight;
+		
+		
+		
+		System.out.println("The age is " + age);
+		
+		
+		
+	}
+}

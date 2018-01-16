@@ -1,0 +1,8 @@
+package edu.pitt.helloanimals;
+
+public class Fish {
+	String age = "0";
+	String color = "red";
+	
+	System.out.println(age);
+}

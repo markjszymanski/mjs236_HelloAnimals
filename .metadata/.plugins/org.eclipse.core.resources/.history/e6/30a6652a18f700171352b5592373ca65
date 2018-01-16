@@ -1,0 +1,16 @@
+package edu.pitt.helloanimals;
+
+public class Animal {
+	
+	public static void main(String[] args) {
+		
+		String age = "0";
+		
+		
+		
+		System.out.println(age);
+		
+		
+		
+	}
+}

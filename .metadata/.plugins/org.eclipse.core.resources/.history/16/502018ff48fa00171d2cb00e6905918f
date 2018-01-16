@@ -1,0 +1,12 @@
+package edu.pitt.helloanimals;
+
+public class Mammal {
+
+	public Mammal(age, color, weight, minimumWeight) {
+		
+	}
+	
+	void run() {
+		
+	}
+}

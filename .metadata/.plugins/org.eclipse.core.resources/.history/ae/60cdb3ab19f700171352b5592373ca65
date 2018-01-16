@@ -1,0 +1,17 @@
+package edu.pitt.helloanimals;
+
+public class Animal {
+	
+	public static void main(String[] args) {
+		
+		String age;
+		String color;
+		String type;
+		int weight;
+		int minimumWeight;		
+	}
+	
+	void animal(age,color,type,weight,minimumWeight) {
+		
+	}
+}

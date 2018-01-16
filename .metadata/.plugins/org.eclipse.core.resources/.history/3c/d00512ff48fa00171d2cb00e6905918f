@@ -1,0 +1,12 @@
+package edu.pitt.helloanimals;
+
+public class Bird {
+	
+	public Bird(age, color, weight, minimumWeight) {
+		
+	}
+	
+	void fly() {
+		
+	}
+}

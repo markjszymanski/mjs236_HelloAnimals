@@ -1,0 +1,43 @@
+package edu.pitt.helloanimals;
+
+public class Animal {
+	
+	private String age;
+	private String color;
+	private String type;
+	private int weight;
+	private int minimumWeight;	
+	
+	public static void main(String[] args) {
+		
+		/*private String age;
+		private String color;
+		private String type;
+		private int weight;
+		private int minimumWeight;*/
+		
+		Mammal mammal = new Mammal();
+		Bird bird = new Bird();
+		Fish fish = new Fish();
+	}
+	
+	public void animal(String age, String color, String type, int weight, int minimumWeight) {
+		
+	}
+	
+	public void eat() {
+		
+	}
+	
+	public int getWeight() {
+		return weight;
+	}
+	
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	
+	public void output() {
+		
+	}
+}

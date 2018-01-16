@@ -1,0 +1,12 @@
+package edu.pitt.helloanimals;
+
+public class Fish {
+	
+	public Fish(age, color, weight, minimumWeight) {
+		
+	}
+	
+	void swim() {
+		
+	}
+}
