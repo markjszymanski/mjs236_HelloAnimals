@@ -1,0 +1,48 @@
+/*
+ * Mark Szymanski
+ * 1/16/2018
+ * INFSCI 1017
+ * Assignment 1
+ * Mammal.java
+ */
+
+package edu.pitt.helloanimals;
+
+public class Mammal extends Animal {
+
+	public Mammal(String age, String color, int weight, int minimumWeight) {
+		super.Animal(age, color, type, weight, minimumWeight);
+	}
+	
+	public int run() {
+		return (getWeight()-1);
+	}
+}
+/*
+
+class Mammal extends Animal 
+{
+	private String type;
+
+	public Mammal (String age, String color, int weight, int minimumWeight)
+	{
+		// invoking base-class constructor
+		super(age, color, weight, minimumWeight);
+		type = "Mammal";
+	}
+
+	//The Mammal's action
+	public void run (int weight)
+	{
+		weight--;
+	}
+
+	//Adds the type of animal to the println
+	@Override
+	public String toString()
+	{
+		return (super.toString()+ type + ".");
+	}
+}
+
+*/

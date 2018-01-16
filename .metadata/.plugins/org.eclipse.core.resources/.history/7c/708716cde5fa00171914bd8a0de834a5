@@ -1,0 +1,21 @@
+/*
+ * Mark Szymanski
+ * 1/16/2018
+ * INFSCI 1017
+ * Assignment 1
+ * Mammal.java
+ */
+
+package edu.pitt.helloanimals;
+
+public class Mammal extends Animal {
+
+	public Mammal(String age, String color, int weight, int minimumWeight) {
+		super(age, color, weight, minimmWeight);
+		type = "Mammal";
+	}
+	
+	public int run() {
+		return (getWeight()-1);
+	}
+}

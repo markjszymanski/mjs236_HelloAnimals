@@ -1,0 +1,23 @@
+/*
+ * Mark Szymanski
+ * 1/16/2018
+ * INFSCI 1017
+ * Assignment 1
+ * Bird.java
+ */
+
+package edu.pitt.helloanimals;
+
+public class Bird extends Animal {
+
+	private String type;
+	
+	public Bird(String age, String color, int weight, int minimumWeight) {
+		super(age, color, weight, minimumWeight);
+		type = "Bird";
+	}
+	
+	public int fly() {
+		return (getWeight()-2);
+	}
+}

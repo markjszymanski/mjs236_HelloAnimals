@@ -1,0 +1,46 @@
+/*
+ * Mark Szymanski
+ * 1/16/2018
+ * INFSCI 1017
+ * Assignment 1
+ * Fish.java
+ */
+
+package edu.pitt.helloanimals;
+/*
+public class Fish extends Animal {
+	
+	public Fish(String age, String color, String type, int weight, int minimumWeight) {
+		
+	}
+	
+	public int swim() {
+		return (getWeight()-1);
+	}
+}
+*/
+
+class Fish extends Animal 
+{
+	private String type;
+	// the MountainBike subclass has one constructor
+	public Fish (String age, String color, int weight, int minimumWeight)
+	{
+		// invoking base-class(Bicycle) constructor
+		super(age, color, weight, minimumWeight);
+		type = "Fish";
+	}
+
+	//The Fish's action
+	public void swim (int weight)
+	{
+		weight--;
+	}
+
+	//Adds the type of animal to the println
+	@Override
+	public String toString()
+	{
+		return (super.toString()+ type + ".");
+	}
+}

@@ -1,0 +1,156 @@
+/*
+ * Mark Szymanski
+ * 1/16/2018
+ * INFSCI 1017
+ * Assignment 1
+ * Animal.java
+ */
+
+package edu.pitt.helloanimals;
+
+import java.util.*;
+
+public class Animal {
+	
+	protected String age;
+	protected String color;
+	protected String type;
+	protected int weight;
+	protected int minimumWeight;	
+	
+	public static void main(String[] args) {
+		
+		Mammal dog = new Mammal("five", "black", 25, 15);
+		dog.eat();
+		dog.run();
+		
+		Bird eagle = new Bird("six", "brown", 10, 5);
+		eagle.eat();
+		eagle.fly();
+		
+		Fish salmon = new Fish("three", "pink", 8, 4);
+		salmon.eat();
+		salmon.swim();
+		
+		ArrayList<Animal> animalList = new ArrayList<Animal>();
+		
+		animalList.add(dog);
+		animalList.add(eagle);
+		animalList.add(salmon);
+		
+		//animalList.output();
+		
+		//System.out.println(animalList.toString());
+		System.out.println(animalList.get(1));
+		System.out.println(animalList.get(2));
+	}
+	
+	public void Animal(String age, String color, String type, int weight, int minimumWeight) {
+		this.age = age;
+		this.color = color;
+		this.type = type;
+		this.weight = weight;
+		this.minimumWeight = minimumWeight;
+	}
+	
+	public int eat() {
+		return (getWeight()+1);
+	}
+	
+	public int getWeight() {
+		return weight;
+	}
+	
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	
+	@Override
+	public String toString() {
+		//System.out.println(getWeight());
+		return("This Animal is " + age + " years old." + "\n" +
+				"It weights " + weight + " pounds." + "\n" + 
+				"It is " + color + ".\n");
+	}
+}
+
+/*
+
+import java.util.ArrayList;
+
+//Created by Derrick Skinger
+//For IS 1017
+// Much inspiration taken from https://www.geeksforgeeks.org/inheritance-in-java/
+
+class Animal {
+	private String age;
+	private String color;
+	private int weight;
+	int minimumWeight;
+
+	public static void main(String[] args) 
+	{
+		//Had some help from https://stackoverflow.com/questions/3982550/creating-an-arraylist-of-objects
+		ArrayList<Animal> animals = new ArrayList<Animal>();
+
+		//I created the animals then allowed them to eat and do there action
+		Fish trout = new Fish("3", "brown", 4, 2);
+		trout.eat();
+		trout.swim(1);
+
+		Mammal human = new Mammal("25", "White", 200, 125);
+		human.eat();
+		human.run(2);
+
+		Bird robin = new Bird ("2", "Red", 2,1);
+		robin.eat();
+		robin.fly(1);
+
+		Mammal rhino = new Mammal("50", "Black", 400, 350);
+		rhino.eat();
+		rhino.run(2);
+
+		Bird blueJay = new Bird ("1", "Blue", 4,2);
+		blueJay.eat();
+		blueJay.fly(1);
+
+		Fish bass = new Fish("7", "Green", 8, 4);
+		trout.eat();
+		bass.swim(2);
+
+		//Added each animal to the array
+		animals.add(trout);
+		animals.add(human);
+		animals.add(robin);
+		animals.add(rhino);
+		animals.add(blueJay);
+		animals.add(bass);
+
+		//Printed the array
+		System.out.println(animals.toString());
+	}
+
+	//This is the constructor for the animal object
+	public Animal(String age, String color, int weight, int minimumWeight) {
+		this.age = age;
+		this.color = color;
+		this.weight = weight;
+		this.minimumWeight = minimumWeight;
+	}
+
+	//This allows the object to eat
+	public void eat () 
+	{
+		weight++;
+	}
+
+	// toString() method to print info about the animal
+	//This was taken from the website at the top then rewritten
+	public String toString() 
+	{
+		return("\n \n" + "This Animal is " + age + " years old." + "\n" +
+				"It weights " + weight + " pounds." + "\n" + 
+				"It is a " + color + " ");
+	} 
+}
+*/
