@@ -39,12 +39,12 @@ public class Animal {
 		animalList.add(salmon);
 	
 		//used to print out results in a legible manner
-		int i = 0;
+		/*int i = 0;
 		while (i < animalList.size()) 
 		{ 
 			System.out.println(animalList.get(i));
 			i++;
-		}
+		}*/
 	}
 	
 	public void Animal(String age, String color, String type, int weight, int minimumWeight) {
@@ -67,9 +67,11 @@ public class Animal {
 		this.weight = weight;
 	}
 	
+	//found this online at 
 	//used to print results from arraylist
 	//i honestly need to figure out exactly how and why this works
+	//@Override
 	public String toString() {
-		return("This Animal is " + age + " years old, weighs " + weight + " pounds, has a minimum weight of " + minimumWeight + ", and is " + color + ".\n");
+		return("This Animal is " + age + " years old, weighs " + weight + " pounds, and is " + color + ".\n");
 	}
 }
